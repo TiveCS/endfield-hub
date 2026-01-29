@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(git -C D:/codes/endfield-hub add docker-compose.yml server/ .claude/)",
+      "Bash(git -C D:/codes/endfield-hub status)",
+      "Bash(git -C D:/codes/endfield-hub rm:*)",
+      "Bash(git -C D:/codes/endfield-hub add .gitignore .claude/ docker-compose.yml server/)"
+    ]
+  }
+}

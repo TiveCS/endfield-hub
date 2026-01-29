@@ -1,0 +1,16 @@
+[workspace]
+members = [".", "migration"]
+
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sea-orm = { version = "2.0.0-rc", features = [ "sqlx-postgres", "runtime-tokio-native-tls", "macros" ] }
+actix-web = "4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+utoipa = { version = "5", features = ["actix_extras", "auto_into_responses"] }
+utoipa-actix-web = "0.1"
+utoipa-scalar = { version = "0.3", features = ["actix-web"] }
