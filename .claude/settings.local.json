@@ -5,7 +5,10 @@
       "Bash(git -C D:/codes/endfield-hub add docker-compose.yml server/ .claude/)",
       "Bash(git -C D:/codes/endfield-hub status)",
       "Bash(git -C D:/codes/endfield-hub rm:*)",
-      "Bash(git -C D:/codes/endfield-hub add .gitignore .claude/ docker-compose.yml server/)"
+      "Bash(git -C D:/codes/endfield-hub add .gitignore .claude/ docker-compose.yml server/)",
+      "Bash(cargo run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd dotenvy to load .env file, add web directory and env example\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
     ]
   }
 }

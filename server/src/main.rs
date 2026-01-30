@@ -97,6 +97,8 @@ pub struct ApiDoc;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    dotenvy::dotenv().ok();
+
     let database_url = std::env::var("DATABASE_URL").expect("DATABASE_URL must be set");
     let db: DatabaseConnection = establish_connection(&database_url)
         .await
